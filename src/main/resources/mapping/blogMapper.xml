@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rczx.blog.mapper.BlogMapper">
+
+       <insert id="addBlog" parameterType="com.rczx.blog.model.BlogInfo">
+              INSERT INTO t_blog (user_id,blog_label,blog_description,blog_name,blog_title,blog_content)
+              VALUES (#{userID},#{blogLabel},#{blogDescription},#{blogName},#{blogTitle},#{blogContent})
+
+       </insert>
+
+</mapper>
