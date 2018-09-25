@@ -1,4 +1,4 @@
-package com.rczx.blog.controller;
+package com.rczx.blog.controller.tms;
 
 
 import com.rczx.blog.config.MyConfig;
@@ -19,7 +19,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/blog")
-public class RestUserController {
+public class BaseBlogController {
 
  @Autowired
   private BlogService blogService;
