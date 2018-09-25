@@ -5,6 +5,8 @@ import com.rczx.blog.config.MyConfig;
 import com.rczx.blog.dto.AddBlogDTO;
 import com.rczx.blog.service.BlogService;
 import com.rczx.blog.util.Common;
+import com.rczx.blog.util.restfulbody.message.dosser.DosserReturnBody;
+import com.rczx.blog.util.restfulbody.message.dosser.DosserReturnBodyBuilder;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.collections.FastHashMap;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,21 +29,19 @@ public class RestUserController {
 
     @PostMapping ({"/add.json"})
     @ApiOperation(value="新增", tags={"博客管理"})
-    public Map<String, Object> getUserInfo(@RequestBody AddBlogDTO addBlogDTO) {
+    public DosserReturnBody getUserInfo(@RequestBody AddBlogDTO addBlogDTO) {
 
         String  url= Common.WECHAT_REDIRECT_URL;
 
-        Map<String, Object> map=new HashMap();
         try {
             blogService.addBlog(addBlogDTO);
         } catch (Exception e) {
             e.printStackTrace();
-            map.put("state","fail");
-            return map;
-        }
 
-        map.put("state","suc");
-        return map;
+            return new DosserReturnBodyBuilder().statusInternalServerError().build();
+        }
+        return new DosserReturnBodyBuilder().statusAccpted().build();
+
     }
 
 
