@@ -27,11 +27,10 @@
        </triggeringPolicy>
     </appender>  -->
     
-   <logger name="com.rczx.blog.mapper" level="DEBUG"/>
-     
-    <!-- 日志输出级别 -->
+  <logger name="com.rczx.blog.mapper" level="DEBUG"/>
+    
     <root level="DEBUG">
         <appender-ref ref="STDOUT" />
-    </root> 
+    </root>
   
 </configuration>

@@ -1,8 +1,7 @@
-package com.rczx.blog.controller.wechat;
+package com.rczx.blog.wechat;
 
 import com.rczx.blog.util.wechat.AesException;
 import com.rczx.blog.util.wechat.WXPublicUtils;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
