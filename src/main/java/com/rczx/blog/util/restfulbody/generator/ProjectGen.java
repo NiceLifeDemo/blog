@@ -11,11 +11,12 @@ import java.io.OutputStreamWriter;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import com.rczx.blog.util.MapBuilder;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.util.FileCopyUtils;
 
-import com.zm.system.utils.util.MapBuilder;
 
 public class ProjectGen {
     private static Map<String, Object> configMap = (new MapBuilder()).add("group-id", "cn.com.zmkj.abc").add("artifact-id", "abc-core").add("boot-version", "1.5.6.RELEASE").add("pavilion-version", "1.0.0").add("name", "abc-wan-source").add("app-class-name", "Abc").add("out-dir", "D:/").build();

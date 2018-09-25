@@ -1,6 +1,6 @@
 package com.rczx.blog.util.restfulbody.validation;
 
-import com.zm.system.utils.restfulbody.validation.VehicleIdentificationNumber;
+
 import java.util.Objects;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

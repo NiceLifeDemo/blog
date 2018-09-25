@@ -1,7 +1,7 @@
 package com.rczx.blog.util.restfulbody.validation;
 
 
-import com.zm.system.utils.restfulbody.validation.VehicleIdentificationNumberValidator;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

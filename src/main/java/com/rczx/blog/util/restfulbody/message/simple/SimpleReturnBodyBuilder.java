@@ -2,7 +2,8 @@ package com.rczx.blog.util.restfulbody.message.simple;
 
 
 import com.google.common.collect.Lists;
-import com.zm.system.utils.util.MapFactory;
+import com.rczx.blog.util.MapFactory;
+
 
 import java.util.HashMap;
 import java.util.List;

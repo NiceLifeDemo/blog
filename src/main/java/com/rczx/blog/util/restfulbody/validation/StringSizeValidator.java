@@ -1,7 +1,6 @@
 package com.rczx.blog.util.restfulbody.validation;
 
 
-import com.zm.system.utils.restfulbody.validation.StringSize;
 import java.util.ArrayList;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

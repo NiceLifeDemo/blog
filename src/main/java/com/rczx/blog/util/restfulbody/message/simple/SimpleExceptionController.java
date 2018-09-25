@@ -4,6 +4,8 @@ package com.rczx.blog.util.restfulbody.message.simple;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
+import com.rczx.blog.util.MapBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -14,7 +16,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.zm.system.utils.util.MapBuilder;
 
 /** @deprecated */
 @Deprecated
