@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableAutoConfiguration
 @EnableConfigurationProperties(value = {MyConfig.class})
 @EnableTransactionManagement
-public class BlogApplication{
+public class BlogApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BlogApplication.class, args);
